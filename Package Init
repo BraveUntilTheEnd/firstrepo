@@ -1,0 +1,31 @@
+package iNit;
+
+import java.util.Scanner;
+
+public class BucleWhile {
+	public static void main(String[] args) {
+		Scanner Entrada = new Scanner(System.in);
+		final String UserName = "Javier"; 
+		final String Passsword = "123567";
+		boolean Acceso = false;
+		int Intentos = 0;
+		
+		while (!Acceso && Intentos < 3) {
+			System.out.println("Ingrese Su Nombre de Usuario: ");
+			String UsuarioIngresado = Entrada.next();
+			System.out.println("Ingrese Ahora Su Contraseña: ");
+			String ContraseñaIngresada = Entrada.next();
+			
+			if (UsuarioIngresado.equals(UserName) && ContraseñaIngresada.equals(Passsword)) {
+				Acceso = true;
+				System.out.println("Sesion Iniciada");
+				Entrada.close();
+			}else {
+				Intentos++;
+				System.out.println("Usuario y/o Contraseña Incorrecta");
+			}
+			}
+		if (Intentos == 3) {
+			System.out.println("No Hay Mas Intentos, Llame Al Proveedor Del Servicio");
+		}
+	}
