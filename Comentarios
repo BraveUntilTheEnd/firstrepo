@@ -1,0 +1,51 @@
+// Comentarios Personalizados para Java
+// variable.contains("") el comando contains verifica que la variable contenga lo que este dentro
+// de las comillas
+// variable.endsWith("") determina si la variable termina con lo que está dentro de las comillas
+// variable "var" permite trabajar con caulquiera de estos tipos de datos (int,float,double,long)
+/* variable "math.(Alguna funcion de la clase math)" es para analisis matematicos
+ * math.floot(variable) redondea hacia abajo el valor de la variable devolviendo un double/float
+ * math.round(variable) redondea hacia el int mas cercano, devolviendo un int
+ * math.max(variable) devuelve el valor maximo
+ * math.min(variable) devuelve el valor minimo
+ * "todos los metodos/funciones de math se expresan en un System.out.println()"
+ * variable = math.random() define un valor aleatorio entre 0.0 y 1.0, esto puede moficarse con 
+ * otros metodos de la misma clase math
+ * math.ceil(variable) redondea hacia arriba y el entero mas cercano
+ */
+// int [] array = {1,5,66};  una forma de instanciar e inicializar un array
+// int [] array2 = new int[5];  Otra forma, aqui defines la cantidad de posiciones ,
+// sin asignar aun un  valor a cada posicion, y limitando el tamaño del array
+//char Caracter; //Trabaja con la tabla ASCII a menos que le des la letra exacta
+//int Numero;
+//Ingresar datos
+// Final (Es un tipo de dato de una constante, un valor que una vex definido no se puede modificar a lo largo del codigo)
+// Convertir de Minuscula a Mayuscula
+		System.out.println(Palabra +" En mayuscula es: "+ Palabra.toUpperCase());
+		
+		// Convertir de Mayuscula a MMinuscula
+		System.out.println(Palabra2 +" En minuscula es: "+ Palabra.toLowerCase());
+		
+		// Escanear una frase en lugar de una sola palabra
+		Scanner datos3 = new Scanner(System.in);
+		System.out.println("Ingrese una Frase: ");
+		String Frase = datos3.nextLine();
+		System.out.println("La Frase es: "+ Frase);
+		datos3.close();
+
+ // Saber Caracter especifico de una variable
+		System.out.println(Palabra.charAt(2)); // charAt("Aqui se define la posicion a averiguar")
+		
+		// Saber Cantidad de caracteres de una palabra
+		System.out.println("La palabra " + Palabra + ", tiene: " + Palabra.length() + " caracteres");
+		
+		// Saber los caracteres en el rango de posiciones solicitadas
+		System.out.println("Las 3 primeras letras de " + Palabra + " Son: " + Palabra.substring(0,3));
+		
+		// Buscar si hay caracteres similares 
+		int coincidencia = Palabra.indexOf(Palabra2);
+		if (coincidencia == -1) {
+			System.out.println("Las palabras "+ Palabra+" y "+ Palabra2 + " no tienen caracteres similares");
+		} else {
+			System.out.println("Las palabras "+ Palabra+" y "+ Palabra2 + " si tienen caracteres similares");
+		}
