@@ -1,4 +1,4 @@
-// Comentarios Personalizados para Java
+// ---------------------------------------- Comentarios Personalizados para Java----------------------------
 // variable.contains("") el comando contains verifica que la variable contenga lo que este dentro
 // de las comillas
 // variable.endsWith("") determina si la variable termina con lo que está dentro de las comillas
@@ -13,9 +13,12 @@
  * otros metodos de la misma clase math
  * math.ceil(variable) redondea hacia arriba y el entero mas cercano
  */
+// -------------------------------- Arrays y sus metodos------------------------------------------------------
 // int [] array = {1,5,66};  una forma de instanciar e inicializar un array
 // int [] array2 = new int[5];  Otra forma, aqui defines la cantidad de posiciones ,
 // sin asignar aun un  valor a cada posicion, y limitando el tamaño del array
+
+// ------------------------------- Codigos de Pruebas---------------------------------------------------------
 //char Caracter; //Trabaja con la tabla ASCII a menos que le des la letra exacta
 //int Numero;
 //Ingresar datos
