@@ -17,6 +17,7 @@
 // int [] array = {1,5,66};  una forma de instanciar e inicializar un array
 // int [] array2 = new int[5];  Otra forma, aqui defines la cantidad de posiciones ,
 // sin asignar aun un  valor a cada posicion, y limitando el tamaño del array
+System.out.println("Array 1 Completo: " + Arrays.toString(array)); // Como mostrar un Array completo y como String
 
 // ------------------------------- Codigos de Pruebas---------------------------------------------------------
 //char Caracter; //Trabaja con la tabla ASCII a menos que le des la letra exacta
