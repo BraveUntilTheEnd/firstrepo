@@ -96,3 +96,17 @@ System.out.println("Array 1 Completo: " + Arrays.toString(array)); // Como mostr
          return autos;
      }
  }*/
+// ----------------------------------------------------Instanciar Una Clase----------------------------------------------
+class Automovil {
+		String Marca;
+		String Modelo;
+		int Anio;
+		int CantRuedas;
+		boolean Camara = true;
+	
+		public static void main(String[] args) {
+			//Instanciar una clase 
+			Automovil auto1 = new Automovil();
+			
+		}
+	}
