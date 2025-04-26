@@ -13,11 +13,15 @@
  * otros metodos de la misma clase math
  * math.ceil(variable) redondea hacia arriba y el entero mas cercano
  */
+
+
 // -------------------------------- Arrays y sus metodos------------------------------------------------------
 // int [] array = {1,5,66};  una forma de instanciar e inicializar un array
 // int [] array2 = new int[5];  Otra forma, aqui defines la cantidad de posiciones ,
 // sin asignar aun un  valor a cada posicion, y limitando el tamaño del array
 System.out.println("Array 1 Completo: " + Arrays.toString(array)); // Como mostrar un Array completo y como String
+
+
 
 // ------------------------------- Codigos de Pruebas---------------------------------------------------------
 //char Caracter; //Trabaja con la tabla ASCII a menos que le des la letra exacta
@@ -26,30 +30,69 @@ System.out.println("Array 1 Completo: " + Arrays.toString(array)); // Como mostr
 // Final (Es un tipo de dato de una constante, un valor que una vex definido no se puede modificar a lo largo del codigo)
 // Convertir de Minuscula a Mayuscula
 		System.out.println(Palabra +" En mayuscula es: "+ Palabra.toUpperCase());
+
+
 		
-		// Convertir de Mayuscula a MMinuscula
+// ---------------------------------------------Convertir de Mayuscula a MMinuscula------------------------------------------------------
 		System.out.println(Palabra2 +" En minuscula es: "+ Palabra.toLowerCase());
-		
-		// Escanear una frase en lugar de una sola palabra
+
+
+
+// -------------------------------------------Escanear una frase en lugar de una sola palabra--------------------------------------------
 		Scanner datos3 = new Scanner(System.in);
 		System.out.println("Ingrese una Frase: ");
 		String Frase = datos3.nextLine();
 		System.out.println("La Frase es: "+ Frase);
 		datos3.close();
 
- // Saber Caracter especifico de una variable
+
+ // ---------------------------------------------Saber Caracter especifico de una variable------------------------------------------------
 		System.out.println(Palabra.charAt(2)); // charAt("Aqui se define la posicion a averiguar")
+
+
 		
-		// Saber Cantidad de caracteres de una palabra
+-------------------------------------------------Saber Cantidad de caracteres de una palabra----------------------------------------------
 		System.out.println("La palabra " + Palabra + ", tiene: " + Palabra.length() + " caracteres");
-		
-		// Saber los caracteres en el rango de posiciones solicitadas
+
+
+
+//----------------------------------------------Saber los caracteres en el rango de posiciones solicitadas--------------------------------
 		System.out.println("Las 3 primeras letras de " + Palabra + " Son: " + Palabra.substring(0,3));
-		
-		// Buscar si hay caracteres similares 
+
+
+
+// -----------------------------------------------------Buscar si hay caracteres similares------------------------------------------------
 		int coincidencia = Palabra.indexOf(Palabra2);
 		if (coincidencia == -1) {
 			System.out.println("Las palabras "+ Palabra+" y "+ Palabra2 + " no tienen caracteres similares");
 		} else {
 			System.out.println("Las palabras "+ Palabra+" y "+ Palabra2 + " si tienen caracteres similares");
 		}
+
+/*
+ -----------------------------------------------------Como leer un txt--------------------------------------------------
+ import java.io.BufferedReader;
+ import java.io.File;
+ import java.io.FileReader;
+ import java.util.ArrayList;
+ import java.util.List;
+
+ public class LecturaDeDatos {
+     public static List<String> lectura(String rutaArchivo) {
+         List<String> autos = new ArrayList<>();
+
+         try {
+             File sFile = new File(rutaArchivo);
+             FileReader sFileReader = new FileReader(sFile);
+             BufferedReader sBu = new BufferedReader(sFileReader);
+             String linea;
+             while ((linea = sBu.readLine()) != null) {
+                 autos.add(linea);
+             }
+             sBu.close(); // Cerramos el BufferedReader
+         } catch (Exception e) {
+             System.out.println("Error al leer el archivo: " + e.toString());
+         }
+         return autos;
+     }
+ }*/
