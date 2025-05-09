@@ -107,6 +107,7 @@ class Automovil {
 		public static void main(String[] args) {
 			//Instanciar una clase 
 			Automovil auto1 = new Automovil();
-			
 		}
 	}
+// ----------------------------------------------------------Metodos---------------------------------------------------------
+El método .trim() en Java se utiliza para eliminar los espacios en blanco al inicio y al final de una cadena (String).
