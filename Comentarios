@@ -96,6 +96,43 @@ System.out.println("Array 1 Completo: " + Arrays.toString(array)); // Como mostr
          return autos;
      }
  }*/
+/*---------------------------------------Leer Un Txt Y Guardarlo Como Una Lista De Objetos-----------------------------------------
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.util.List;
+import java.util.ArrayList;
+public class Archivo {
+	public static void main(String[] args) {
+		
+		List<Persona> personas = new ArrayList<>();
+		try {
+			File file = new File("C:\\Users\\diego\\OneDrive\\Desktop\\personas.txt");
+			FileReader rFile = new FileReader(file);
+			BufferedReader bFile = new BufferedReader(rFile);
+			String linea ;
+			while((linea = bFile.readLine())!= null) {
+				linea = linea.trim();
+				String[] columnas = linea.split(",");
+				if (columnas.length == 4) {
+					String Nombre = columnas[0];
+					int Edad = Integer.parseInt(columnas[1].trim());
+					String Genero = columnas[2];
+					String Est_Civil = columnas[3];
+					Persona persona = new Persona(Nombre, Edad, Genero, Est_Civil);
+					personas.add(persona);
+				}
+				}
+			bFile.close();
+			personas.forEach(System.out::println);
+			
+		} catch (Exception e){
+			System.out.println(e.toString());
+		}	
+	}
+}
+
+*/
 // ----------------------------------------------------Instanciar Una Clase----------------------------------------------
 class Automovil {
 		String Marca;
